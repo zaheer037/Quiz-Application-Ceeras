@@ -30,7 +30,8 @@ const userSchema = new mongoose.Schema({
   created_at: { 
     type: Date, 
     default: Date.now 
-  }
-});
+  },
+  isVerified: { type: Boolean, default: false } // New field added
 
-export default mongoose.model("User",userSchema);
+
+});
