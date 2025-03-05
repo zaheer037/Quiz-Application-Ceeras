@@ -32,6 +32,4 @@ const userSchema = new mongoose.Schema({
     default: Date.now 
   },
   isVerified: { type: Boolean, default: false } // New field added
-
-
 });
